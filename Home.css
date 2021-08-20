@@ -1,4 +1,13 @@
 img
 {
-    flex
+    display: flexbox;
+    border-radius: 30%;
+    scale: 80%;
+    align-content: center;
+
+}
+
+h1
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
