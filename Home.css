@@ -7,7 +7,21 @@ img
 
 }
 
-h1
+.topNavWrap 
 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: dimgray;
+    flex-wrap: wrap 
+    
 }
+
+  .brand
+  {
+      scale: 50%;
+  }
+  
+
+
+
