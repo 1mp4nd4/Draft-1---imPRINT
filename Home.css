@@ -1,27 +1,48 @@
-img
-{
-    display: flexbox;
-    border-radius: 30%;
-    scale: 80%;
-    align-content: center;
+/* header style */
 
-}
 
 .topNavWrap 
 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: dimgray;
-    flex-wrap: wrap 
+    flex-wrap: wrap;
+    align-items: center;
+    height: 40 px;
+    width: fit-content;
+   
+
     
 }
 
-  .brand
-  {
-      scale: 50%;
-  }
-  
+#logo
+{
+    height: 64px;
+    width: 64px;
+    display:flex;
+    flex-wrap: wrap;
+    align-content:flex-start;
+    object-fit: contain;
+    
+    
+}
+
+/* hero image style */
+body
+{
+    background: no-repeat center/80% url(https://www.plastico.com/documenta/imagenes/125061/Impresion-3D-se-abre-paso-en-la-industria-mexicana-G.jpg);
+    background-size: ;
+}
+
+.buttons
+{
+    display: inline flex;
+    justify-content:space-between;
+    position:sticky;
+}
+
+
+
 
 
 
