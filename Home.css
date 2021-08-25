@@ -4,45 +4,87 @@
 .topNavWrap 
 {
     display: flex;
-    justify-content: space-between;
-    background-color: dimgray;
-    flex-wrap: wrap;
-    align-items: center;
-    height: 40 px;
-    width: fit-content;
-   
-
-    
+    justify-content: space-evenly;
+    background-color: rgb(161, 156, 156);
+    align-content:space-around;
+    height: 100 px;
+    width: auto;
+    margin-left: -10px;
+    margin-right: -10px;
+    overflow:hidden;
 }
 
-#logo
-{
-    height: 64px;
-    width: 64px;
-    display:flex;
-    flex-wrap: wrap;
-    align-content:flex-start;
-    object-fit: contain;
-    
-    
+.logo
+{   
+flex-grow: 1;
+margin-left: 10px;
+border-color:  rgb(108, 126, 133); 
+border-width: 5px;
+border-style: solid;
+position:absolute;
+top: -50px;
+left:30px;
+   
 }
 
 /* hero image style */
-body
+.heroImage
 {
-    background: no-repeat center/80% url(https://www.plastico.com/documenta/imagenes/125061/Impresion-3D-se-abre-paso-en-la-industria-mexicana-G.jpg);
-    background-size: ;
+max-width: 100%;
+max-height: 100%;
+display: flex;
+border-color:  rgb(108, 126, 133); 
+border-width: 5px;
+border-style: solid;
+justify-content:space-evenly;
+
 }
+
+.topNav{
+        margin-top: -10px;
+}
+
+.heroText
+{
+    flex-grow: 1;
+}
+
+
+/* styling buttons */
 
 .buttons
 {
     display: inline flex;
     justify-content:space-between;
     position:sticky;
+    align-items: flex-start;
+    flex-grow: 1;
+    border-color:  rgb(108, 126, 133); 
+border-width: 5px;
+border-style: solid;
 }
 
+button
+{
+    background-color: rgb(108, 126, 133);
+    color: mintcream;
+    padding: 10px;
+    border-color: rgb(108, 126, 133);
+    border-radius: 5px;
+    height: 80px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
+.searchbar
+{
+    align-items: flex-end;
+}
 
+/* background color */
 
+html
+{
+ background-color: rgb(108, 126, 133);;
 
-
+}
