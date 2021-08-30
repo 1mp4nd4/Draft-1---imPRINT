@@ -1,162 +1,21 @@
-/* header style */
+body
+{
+    background: #9e9da6;   
+}
 
+/* Navbar */
 
-.topNavWrap 
+.navBar
 {
     display: flex;
-    flex-direction: row-reverse;
-    background-color: #9e92a6;
-    align-content: flex-end;
-    height: 100 px;
-    width: auto;
-    margin-left: -10px;
-    margin-right: -10px;
-    overflow:hidden;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-.extrahorizontal
- {
-    display: block;
-    background-color: rgb(153, 142, 149);
-    padding: 35px;
-    margin-left: -10px;
-    margin-right: -10px;
- }
-.nav
+.Logo
 {
-    margin-right: 20px;
+ height: auto;
+ width: 25vh;  
 }
-
-button.nav
-{
-    background-color: rgb(30, 119, 122);
-    color: rgb(107, 23, 75);
-    padding: 10px;
-    border-color: rgb(108, 126, 133);
-    border-radius: 5px;
-    height: 80px;
-    width: 260px;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-}
-.logo
-{   
-margin-left: 10px;
-border-color:  rgb(108, 126, 133); 
-border-width: 5px;
-border-style: solid;
-position:absolute;
-top: -50px;
-left:30px;
-   
-}
-
-/* hero image style */
-.rowImageRow1
-{
-    width: auto;
-    background-color: #f7d38b;
-    display: block;
-    height: 4vw;
-    margin: -1vw -1vw;
-}
-
-.rowImageRow2
-{
-    width: auto;
-    background-color: #f7d38b;
-    display: block;
-    height: 8vw;
-    margin: -1vw -1vw;
-}
-.flexMid
-{
-max-width: 100%;
-max-height: 100%;
-display: flex;
-flex-direction: row;
-border-color:  rgb(108, 126, 133); 
-border-width: 5px;
-border-style: solid;
-justify-content: center;
-}
-
-.spacer1
-{
-    flex-grow: 0;
-}
-
-
-
-
-.heroImageWrap
-{
-    flex-grow: ;
-}
-
-/* text styling */
-
-
-.heroTextWrap
-{
-    display:flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-basis: 1em;
-    
-}
-
-.heroText
-{
-
-border-style: ridge;
-border-color: #042fa0;
-border-width: 0.5em;
-margin: 6em;
-text-align: center;
-font-size: larger;
-font-weight: bold;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-/* styling buttons */
-
-.buttons
-{
-    display: inline flex;
-    justify-content:space-between;
-    position:sticky;
-    align-items: flex-start;
-    flex-grow: 1;
-    border-color:  rgb(108, 126, 133); 
-border-width: 5px;
-border-style: solid;
-}
-
-button
-{
-    background-color: rgb(108, 126, 133);
-    color: mintcream;
-    padding: 10px;
-    border-color: rgb(108, 126, 133);
-    border-radius: 5px;
-    height: 80px;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.searchbar
-{
-    align-items: flex-end;
-}
-
-/* background color */
-
-html
-{
- background-color: rgb(108, 126, 133);;
-
-}
-
-
