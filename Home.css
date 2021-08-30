@@ -8,14 +8,20 @@ body
 .navBar
 {
     display: flex;
-    flex-flow:row wrap;
+    flex-flow:row;
     justify-content: space-between;
     align-items: center;
-
+    
 }
 
 .Logo
 {
  height: auto;
  width: 25vh;  
+}
+
+button.navBar
+{
+    border-style:double;
+    border- : 5vh;
 }
