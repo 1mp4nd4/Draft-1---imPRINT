@@ -1,27 +1,52 @@
 body
 {
-    background: #9e9da6;   
+    background: #908f94;   
 }
 
 /* Navbar */
 
 .navBar
 {
+    margin-top: 1em;
     display: flex;
     flex-flow:row;
     justify-content: space-between;
     align-items: center;
-    
+    background-color: #9e92a6;
+    border-radius: 5em;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
 }
 
 .Logo
 {
+padding: 1vh 1vh;
  height: auto;
  width: 25vh;  
+
 }
 
-button.navBar
+
+.navButton
 {
-    border-style:double;
-    border- : 5vh;
+    
+    margin:0 0.1em 0.1em;
+    border:0.8em solid rgba(255,255,255,0);
+    border-radius:2em;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:500;
+    font-size: large;
+    color :#000000;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    transition: all 0.2s;
+    background-color: #f7d38b;
 }
+
+.navButton:hover
+{
+    border-color: rgb(83, 75, 75);
+}
+
+
+
