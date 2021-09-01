@@ -1,6 +1,6 @@
 body
 {
-    background: #908f94;   
+    background: #9e9da6;   
 }
 
 /* Navbar */
@@ -10,43 +10,85 @@ body
     margin-top: 1em;
     display: flex;
     flex-flow:row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #9e92a6;
+    background-color: #a9a9ac;
     border-radius: 5em;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-items: center;
+    
+
 }
 
 .Logo
 {
 padding: 1vh 1vh;
  height: auto;
- width: 25vh;  
-
+ width: 15vh;  
+ margin-right: 1vw;
+ padding-right: 10vw;
 }
 
 
 .navButton
 {
-    
-    margin:0 0.1em 0.1em;
     border:0.8em solid rgba(255,255,255,0);
     border-radius:2em;
     text-decoration:none;
     font-family:'Roboto',sans-serif;
     font-weight:500;
-    font-size: large;
+    font-size: auto;
     color :#000000;
     text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
     text-align:center;
     transition: all 0.2s;
     background-color: #f7d38b;
+    height: 5vw;
+    width: auto;
+    flex-grow: 1;
+    margin-right: 2vw;
+    margin-left: 4vw;
 }
 
 .navButton:hover
 {
     border-color: rgb(83, 75, 75);
+    border-width: 0.1em;
 }
 
+/* layout flex */
+
+/* Showcase images */
+
+figure
+{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 1em;
+    border-radius: 1em;
+    border-style: solid;
+    border-color:#842d34;
+    border-width: 1em 0em 1em 0em;
+    margin: 1em 0;
+    flex-wrap:nowrap;
+    height: 15vw;
+    width: 60vw;
+
+    
+}
+
+.Pitch1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    flex: 1;
+} 
 
 
+.fixedImage
+{
+    height: auto;
+    width:max-content;
+    object-fit:scale-down;
+    flex: 0;
+}
