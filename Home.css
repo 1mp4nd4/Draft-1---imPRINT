@@ -9,7 +9,7 @@ body
 {
     margin-top: 1em;
     display: flex;
-    flex-flow:row;
+    flex-flow:row wrap;
     background-color: #a9a9ac;
     border-radius: 5em;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -25,28 +25,74 @@ padding: 1vh 1vh;
  width: 15vh;  
  margin-right: 1vw;
  padding-right: 10vw;
+ filter:saturate(180%);
 }
 
 
 .navButton
 {
-    border:0.8em solid rgba(255,255,255,0);
+    border:0.2em solid rgba(255,255,255,0);
     border-radius:2em;
     text-decoration:none;
     font-family:'Roboto',sans-serif;
     font-weight:500;
-    font-size: auto;
+    font-size: 100%;
     color :#000000;
     text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
     text-align:center;
     transition: all 0.2s;
     background-color: #f7d38b;
-    height: 5vw;
+    height: auto;
     width: auto;
     flex-grow: 1;
     margin-right: 2vw;
     margin-left: 4vw;
+    margin-top: 1vh;
+
+    
 }
+
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    
+    .navBar
+    {
+    margin-top: 1em;
+    display: flex;
+    flex-flow:column;
+    background-color: #a9a9ac;
+    border-radius: 5em;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    margin: 5vw 20vw 5vw 20vw
+    
+    }
+
+    .layoutWrapper
+    {
+        display: flex;
+    flex-flow: column;
+    }
+
+    .Logo
+    {
+    padding: 1vh 1vh;
+    height: auto;
+    width: 15vh;  
+    margin-right: -5vw;
+    padding-right: 10vw;
+    filter:saturate(180%);
+    }
+
+
+
+    
+
+    }
+   
+
 
 .navButton:hover
 {
@@ -62,12 +108,11 @@ padding: 1vh 1vh;
 }
 /* Layout left*/
 
-figure
+.Showcase1
 {
     display:flex;
     flex-direction:row;
     align-items: center;
-    justify-content: flex-start;
     border-radius: 1em;
     border-radius: 1em;
     border-style: solid;
@@ -75,27 +120,19 @@ figure
     border-width: 1em 0em 1em 0em;
     margin: 1em 0;
     flex-wrap:nowrap;
-    height: 15vw;
-    width: 60vw;
-
-    
+    height: 30vw;
+    width: 60vw;   
 }
 
-.Pitch1
-{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    flex: 1;
-    
-} 
+
 
 
 .fixedImage
 {
     height: auto;
     width:max-content;
-    object-fit:scale-down;
-    flex: 0;
+    object-fit:fill;
+    flex: 2;
 }
 
 /* Layout right */
@@ -111,6 +148,12 @@ figure
     margin-left: 1vw;
     height: 90%;
     text-align: center;
+    background-image: url(https://www.plastico.com/documenta/imagenes/125061/Impresion-3D-se-abre-paso-en-la-industria-mexicana-G.jpg);
+    background-position:center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-blend-mode:soft-light;
+    
 }
 
 .speech p
@@ -119,4 +162,10 @@ figure
     font-weight: bold;
     padding: 5em 1em 1em 1em;
 
+}
+
+.speech span
+{
+    font-weight: bolder;
+    color: #042fa0;
 }
