@@ -3,7 +3,7 @@ body
     background: #d2d2d4;   
 }
 
-/* Navbar and footer*/
+/* Navbar*/
 
 .navBar
 {
@@ -88,70 +88,49 @@ padding: 1vh 1vh;
 
 }
    
-
-
 .navButton:hover
     {
         border-color: rgb(83, 75, 75);
         border-width: 0.1em;
     }
 
-.footer
-    {
-        margin-top: 1em;
-        display: flex;
-        flex-flow:row;
-        background-color: #a9a9ac;
-        border-radius: 5em;
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        align-items: center;
-        justify-content: center;
-    }
-
-.footer div
-{
-    height: 1vh;
-    width: 5vw;
-}
 
 /* layout flex */
-.layoutWrapper
-    {
-        display: flex;
-        flex-flow: row;
-    }
-/* Layout left*/
 
-.Showcase1
+.layoutWrapper
     {
         display:flex;
         flex-direction:row;
         align-items: center;
-        border-radius: 1em;
-        border-radius: 1em;
-        border-style: solid;
-        border-color:#842d34;
-        border-width: 1em 0em 1em 0em;
-        margin: 1em 0;
-        flex-wrap:nowrap;
-        height: 30vw;
-        width: 60vw;   
+        flex-wrap: nowrap;
+        
     }
+
+
+/* Layout left*/
+
+
+
 
 
 
 
 .fixedImage
 {
-    height: auto;
-    width:min-content;
-    object-fit:fill;
-    flex: 2;
+   object-fit: cover;
+   border-radius: 1em;
+    border-radius: 1em;
+    border-style: solid;
+    border-color:#842d34;
+    border-width: 1em 0em 1em 0em;
+    margin: 1em 0;
+    flex-wrap:nowrap;
+    height: 30vw;
+    width: 60vw;  
+   
 }
 
 /* Layout right */
-
-
 
 .speech
 {
@@ -184,3 +163,21 @@ padding: 1vh 1vh;
     color: #042fa0;
 }
 
+/* Footer */
+.footer
+    {
+        margin-top: 1em;
+        display: flex;
+        flex-flow:row;
+        background-color: #a9a9ac;
+        border-radius: 5em;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        align-items: center;
+        justify-content: center;
+    }
+
+.footer div
+{
+    height: 1vh;
+    width: 5vw;
+}
