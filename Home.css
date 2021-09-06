@@ -9,15 +9,19 @@ body
 {
     margin-top: 1em;
     display: flex;
-    flex-flow:row wrap;
+    flex-flow:row-reverse;
     background-color: #a9a9ac;
     border-radius: 5em;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    align-items: center;
-    
+    align-items:center;
+    justify-content: space-evenly;
 
 }
 
+.spacer
+{
+    width:40em;
+}
 .Logo
 {
 padding: 1vh 1vh;
@@ -26,6 +30,8 @@ padding: 1vh 1vh;
  margin-right: 1vw;
  padding-right: 10vw;
  filter:saturate(180%);
+ 
+ 
 }
 
 
@@ -52,7 +58,7 @@ padding: 1vh 1vh;
     
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
     /* For mobile phones: */
     
     .navBar
@@ -66,7 +72,9 @@ padding: 1vh 1vh;
     align-items: center;
     justify-content: center;
     width: 50vw;
-    margin: 5vw 20vw 5vw 20vw
+    margin: 5vw 20vw 5vw 20vw;
+    padding: 1rem;
+    
     
     }
 
@@ -74,13 +82,15 @@ padding: 1vh 1vh;
     {
         display: flex;
     flex-flow: column;
+    /*for speech image responsiveness */
+    flex-wrap: wrap;
     }
 
     .Logo
     {
     padding: 1vh 1vh;
     height: auto;
-    width: 15vh;  
+    width:fit-content;  
     margin-right: -5vw;
     padding-right: 10vw;
     filter:saturate(180%);
@@ -101,17 +111,13 @@ padding: 1vh 1vh;
     {
         display:flex;
         flex-direction:row;
-        align-items: center;
+        align-items:baseline;
         flex-wrap: nowrap;
         
     }
 
 
 /* Layout left*/
-
-
-
-
 
 
 
@@ -124,7 +130,6 @@ padding: 1vh 1vh;
     border-color:#842d34;
     border-width: 1em 0em 1em 0em;
     margin: 1em 0;
-    flex-wrap:nowrap;
     height: 30vw;
     width: 60vw;  
    
@@ -132,6 +137,9 @@ padding: 1vh 1vh;
 
 /* Layout right */
 
+.layoutRight
+{
+}
 .speech
 {
     color: black;
@@ -139,22 +147,26 @@ padding: 1vh 1vh;
     border-radius: 1em;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-left: 1vw;
-    height: 90%;
-    text-align: center;
+    height: 50vh;
+    width: auto;
     background-image: url(https://www.plastico.com/documenta/imagenes/125061/Impresion-3D-se-abre-paso-en-la-industria-mexicana-G.jpg);
     background-position:center;
     background-size: 100%;
     background-repeat: no-repeat;
     background-blend-mode:soft-light;
+    padding: 10vh;
+    position:sticky;
+    padding-top: 10vh;
     
 }
+
 
 .speech p
 {
     font-size:small;
     font-weight: bold;
     padding: 5em 1em 1em 1em;
-
+    align-self: center;
 }
 
 .speech span
@@ -162,7 +174,41 @@ padding: 1vh 1vh;
     font-weight: bolder;
     color: #042fa0;
 }
+/* CTA */
+.CTA
+{
+    display: flex;
+    flex-flow: row wrap;
+}
+.CTA button
+{
+    border:0.2em solid rgba(255,255,255,0);
+    border-radius:0.5em;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:500;
+    font-size: 100%;
+    color :#000000;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    transition: all 0.2s;
+    background-color: #f7d38b;
+    height: 10vh;
+    width: auto;
+    flex-grow: 1;
+    margin-right: 2vw;
+    margin-left: 4vw;
+    margin-top: 1vh;
+    
+}
 
+.CTA button:hover
+{
+    
+    border-color: rgb(83, 75, 75);
+    border-width: 0,1em;
+    
+}
 /* Footer */
 .footer
     {
@@ -174,6 +220,7 @@ padding: 1vh 1vh;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         align-items: center;
         justify-content: center;
+        height: 5vh;
     }
 
 .footer div
