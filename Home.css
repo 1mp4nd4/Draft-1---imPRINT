@@ -1,20 +1,75 @@
-body
+/* For mobile phones: */
+@media all and (max-width: 600px) { 
+    
+    
+    .navBar
+    {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        background-color: #a9a9ac;
+        border-radius: 5em;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        align-items:center;
+        justify-content: space-evenly;
+
+    
+    }
+
+    .Logo
+    {
+    padding: 1vh 1vh;
+    height: auto;
+    width:fit-content;  
+    margin-right: -5vw;
+    padding-right: 10vw;
+    filter:saturate(180%);
+    }
+    
+    .layoutWrapper
+    {
+        flex-wrap: wrap;
+
+    }
+
+    .layoutRight
+    {
+        align-items: center;
+    }
+
+    .layoutLeft
+    {
+        align-items: center;
+    }
+
+    .CTA
+    {
+        width: auto;
+    }
+}
+/* For mobile phones: */
+
+
+
+body, html
 {
     background: #d2d2d4;   
+
 }
 
 /* Navbar*/
 
 .navBar
 {
-    margin-top: 1em;
+   
     display: flex;
-    flex-flow:row-reverse;
+    flex-flow:row-reverse wrap;
     background-color: #a9a9ac;
     border-radius: 5em;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     align-items:center;
     justify-content: space-evenly;
+    margin-top: 1em;
 
 }
 
@@ -58,45 +113,6 @@ padding: 1vh 1vh;
     
 }
 
-@media only screen and (max-width: 400px) {
-    /* For mobile phones: */
-    
-    .navBar
-    {
-    margin-top: 1em;
-    display: flex;
-    flex-flow:column;
-    background-color: #a9a9ac;
-    border-radius: 5em;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    align-items: center;
-    justify-content: center;
-    width: 50vw;
-    margin: 5vw 20vw 5vw 20vw;
-    padding: 1rem;
-    
-    
-    }
-
-    .layoutWrapper
-    {
-        display: flex;
-    flex-flow: column;
-    /*for speech image responsiveness */
-    flex-wrap: wrap;
-    }
-
-    .Logo
-    {
-    padding: 1vh 1vh;
-    height: auto;
-    width:fit-content;  
-    margin-right: -5vw;
-    padding-right: 10vw;
-    filter:saturate(180%);
-    }
-
-}
    
 .navButton:hover
     {
@@ -104,69 +120,87 @@ padding: 1vh 1vh;
         border-width: 0.1em;
     }
 
-
 /* layout flex */
 
 .layoutWrapper
     {
         display:flex;
         flex-direction:row;
-        align-items:baseline;
-        flex-wrap: nowrap;
-        
+        align-items:stretch;
+        flex-basis: 100%;
     }
+
+.layoutWrapper *
+{
+    flex-grow: 1;
+}
 
 
 /* Layout left*/
 
-
-
+.layoutLeft
+{
+    flex-grow: 2;
+    height: 30vw;
+    width: 45vw; 
+    
+    
+}
 .fixedImage
 {
-   object-fit: cover;
-   border-radius: 1em;
+    object-fit: cover;
+    border-radius: 1em;
     border-radius: 1em;
     border-style: solid;
     border-color:#842d34;
     border-width: 1em 0em 1em 0em;
     margin: 1em 0;
     height: 30vw;
-    width: 60vw;  
-   
+    width: 45vw;  
+    min-height: min-content;
+    
 }
 
 /* Layout right */
 
 .layoutRight
 {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column wrap;
+ 
+    
 }
+
+
 .speech
 {
     color: black;
     background-color: #a9a9ac;
     border-radius: 1em;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-left: 1vw;
-    height: 50vh;
-    width: auto;
     background-image: url(https://www.plastico.com/documenta/imagenes/125061/Impresion-3D-se-abre-paso-en-la-industria-mexicana-G.jpg);
     background-position:center;
     background-size: 100%;
     background-repeat: no-repeat;
     background-blend-mode:soft-light;
-    padding: 10vh;
-    position:sticky;
-    padding-top: 10vh;
+    background-size: contain;
+    margin: 2em 0em 10em 1em;
+    height: 30vw;
+    width: 40vw;  
+    text-align:center;
     
 }
 
 
 .speech p
 {
-    font-size:small;
+    font-size:larger;
     font-weight: bold;
     padding: 5em 1em 1em 1em;
     align-self: center;
+    font-family:'Roboto',sans-serif;
+    text-justify: auto;
 }
 
 .speech span
@@ -174,12 +208,42 @@ padding: 1vh 1vh;
     font-weight: bolder;
     color: #042fa0;
 }
+
+.workedWith
+{
+    margin-top: 1em;
+    border-top: 1em;
+    border-style: solid;
+    background-color: #a9a9ac;
+    border-radius: 1em;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    border-color: #a9a9ac;  
+    margin: 1em 0;
+    
+}
+.workedWith img
+{
+    scale:90%;
+}
+.workedWith h1
+{
+    scale: 50%;
+    font-size:3em;
+    font-weight: bold;
+    padding: 0,5em 1em 1em 1em;
+    text-align: center;
+    font-family:'Roboto',sans-serif;
+    text-justify: auto;
+    border-color: #a9a9ac;
+}
+    
 /* CTA */
 .CTA
 {
     display: flex;
     flex-flow: row wrap;
 }
+
 .CTA button
 {
     border:0.2em solid rgba(255,255,255,0);
@@ -193,11 +257,10 @@ padding: 1vh 1vh;
     text-align:center;
     transition: all 0.2s;
     background-color: #f7d38b;
-    height: 10vh;
-    width: auto;
+    height: 9vh;
     flex-grow: 1;
     margin-right: 2vw;
-    margin-left: 4vw;
+    margin-left: 2vw;
     margin-top: 1vh;
     
 }
@@ -212,7 +275,7 @@ padding: 1vh 1vh;
 /* Footer */
 .footer
     {
-        margin-top: 1em;
+        margin-top: 10VH;
         display: flex;
         flex-flow:row;
         background-color: #a9a9ac;
